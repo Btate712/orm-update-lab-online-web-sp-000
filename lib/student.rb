@@ -10,7 +10,7 @@ class Student
     @grade = grade
   end
 
-  self.create_table
+  def self.create_table
     sql = <<-SQL
       CREATE TABLE students (
         id INTEGER PRIMARY KEY,
